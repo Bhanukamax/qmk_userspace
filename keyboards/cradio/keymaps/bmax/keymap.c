@@ -134,7 +134,7 @@
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
 #define __DVORAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
 
-#define ____DVORAK_L1_MOD KC_COMM, KC_DOT, KC_L, KC_P, KC_Y
+#define ____DVORAK_L1_MOD KC_DOT, KC_COMM, KC_L, KC_P, KC_Y
 #define ____DVORAK_L3_MOD KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
 #define ____DVORAK_R1_MOD KC_F, KC_G, KC_C, KC_R, KC_QUOT
 #define ____DVORAK_R3_MOD KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
