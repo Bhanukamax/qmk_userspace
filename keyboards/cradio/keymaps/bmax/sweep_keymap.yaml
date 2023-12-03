@@ -1,0 +1,297 @@
+layout: {qmk_keyboard: cradio, qmk_layout: LAYOUT_split_3x5_2}
+layers:
+  L0:
+  - [',', ., L, P, Y, F, G, C, R, '''']
+  - - {t: A, h: LSFT}
+    - {t: O, h: LCTL}
+    - {t: E, h: LALT}
+    - {t: U, h: LGUI}
+    - {t: I, h: L5}
+    - D
+    - {t: H, h: RGUI}
+    - {t: T, h: RALT}
+    - {t: N, h: RCTL}
+    - {t: S, h: RSFT}
+  - - ;
+    - {t: Q, h: L9}
+    - {t: J, h: L8}
+    - {t: K, h: L7}
+    - X
+    - B
+    - {t: M, h: L7}
+    - {t: W, h: L8}
+    - {t: V, h: L9}
+    - Z
+  - - {t: SPC, h: L2}
+    - {t: SPC, h: L3}
+    - {t: E, h: L2}
+    - {t: RSFT, h: sticky}
+  L1:
+  - [V, W, F, P, B, J, L, U, Y, '''']
+  - - {t: R, h: LSFT}
+    - {t: S, h: LCTL}
+    - {t: T, h: LALT}
+    - {t: H, h: LGUI}
+    - {t: K, h: L5}
+    - X
+    - {t: N, h: RGUI}
+    - {t: A, h: RALT}
+    - {t: I, h: RCTL}
+    - {t: O, h: RSFT}
+  - - ;
+    - {t: C, h: L9}
+    - {t: G, h: L8}
+    - {t: D, h: L7}
+    - DEL
+    - BSPC
+    - {t: M, h: L7}
+    - {t: ',', h: L8}
+    - {t: ., h: L9}
+    - Z
+  - - {t: SPC, h: L2}
+    - {t: SPC, h: L3}
+    - {t: E, h: L2}
+    - {t: RSFT, h: sticky}
+  L2:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: TRNS, h: LSFT}
+    - {t: ESC, h: LCTL}
+    - {t: TRNS, h: LALT}
+    - {t: TAB, h: LGUI}
+    - {t: ▽, type: trans}
+    - <
+    - {t: BSPC, h: RGUI}
+    - {t: UP, h: RALT}
+    - {t: ESC, h: RCTL}
+    - {t: TRNS, h: RSFT}
+  - - {t: ▽, type: trans}
+    - HOME
+    - DEL
+    - END
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - LEFT
+    - DOWN
+    - RIGHT
+    - {t: ▽, type: trans}
+  - - {t: ESC, type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L3:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: <, h: LSFT}
+    - {t: +, h: LCTL}
+    - {t: '-', h: LALT}
+    - {t: /, h: LGUI}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: \, h: RGUI}
+    - {t: '[', h: RALT}
+    - {t: ']', h: RCTL}
+    - {t: '>', h: RSFT}
+  - - <
+    - '='
+    - _
+    - S(SLASH)
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - S(BSLS)
+    - S(LBRC)
+    - S(RBRC)
+    - '>'
+  - - ESC
+    - {type: held}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L4:
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - S(GRV)
+    - S(1)
+    - S(2)
+    - S(3)
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - S(6)
+    - S(7)
+    - S(8)
+    - Z
+  - [S(GRV), S(SCLN), S(4), S(5), '`', S(GRV), S(9), S(0), ;, Z]
+  - - ESC
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L5:
+  - [S(1), S(2), S(3), S(4), S(5), S(6), S(7), S(8), S(9), S(0)]
+  - - C(A)
+    - {t: '`', h: LCTL}
+    - {t: S(GRV), h: LALT}
+    - {t: C(U), h: L5}
+    - {t: /, type: held}
+    - \
+    - {t: _, h: RGUI}
+    - {t: '=', h: RALT}
+    - {t: '[', h: RCTL}
+    - {t: ']', h: RSFT}
+  - [C(Z), C(X), C(C), C(V), S(SLASH), S(BSLS), '-', +, S(LBRC), S(RBRC)]
+  - - ESC
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L6:
+  - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
+  - [LSFT, LCTL, LALT, LGUI, /, LEFT, DOWN, UP, RGHT, BSPC]
+  - [+, '=', _, '-', S(SLASH), HOME, PGUP, PGDN, END, BSPC]
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - L4
+  L7:
+  - - '1'
+    - '2'
+    - '3'
+    - '4'
+    - '5'
+    - '6'
+    - {t: '7', h: RGUI}
+    - {t: '8', h: RALT}
+    - {t: '9', h: RCTL}
+    - {t: '0', h: RSFT}
+  - - LSFT
+    - LCTL
+    - LALT
+    - LGUI
+    - /
+    - .
+    - {t: '4', h: RGUI}
+    - {t: '5', h: RALT}
+    - {t: '6', h: RCTL}
+    - {t: '0', h: RSFT}
+  - - +
+    - '='
+    - _
+    - {t: '-', type: held}
+    - S(SLASH)
+    - S(GRV)
+    - '1'
+    - '2'
+    - '3'
+    - '0'
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - L4
+  L8:
+  - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
+  - [TO(0), TO(1), MPRV, F4, F5, DEL, MEDIA PLAY PAUSE, MNXT, F11, F12]
+  - - VOLD
+    - VOLU
+    - {t: F3, type: held}
+    - BRID
+    - BRIU
+    - F6
+    - TO(6)
+    - RGB TOG
+    - BRID
+    - BRIU
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - {t: ▽, type: trans}
+  L9:
+  - - ESC
+    - Q
+    - W
+    - E
+    - R
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - TO(0)
+  - - TAB
+    - A
+    - S
+    - D
+    - F
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - LCTL
+    - {t: Z, type: held}
+    - X
+    - C
+    - V
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - SPC
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+  L10:
+  - - S(1)
+    - S(2)
+    - S(3)
+    - S(4)
+    - S(5)
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BTN2
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - C(U)
+    - {t: ▽, type: trans}
+    - S(6)
+    - WH U
+    - MS U
+    - WH D
+    - {t: ▽, type: trans}
+  - - {t: ▽, type: trans}
+    - ACL2
+    - ACL1
+    - ACL0
+    - {t: ▽, type: trans}
+    - C(D)
+    - MS L
+    - MS D
+    - MS R
+    - BTN1
+  - - {t: ▽, type: trans}
+    - {t: ▽, type: trans}
+    - BSPC
+    - L4
