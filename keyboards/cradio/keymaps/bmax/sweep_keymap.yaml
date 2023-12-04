@@ -6,25 +6,25 @@ layers:
     - {t: O, h: LCTL}
     - {t: E, h: LALT}
     - {t: U, h: LGUI}
-    - {t: I, h: _NUM1}
+    - {t: I, h: MUS}
     - D
     - {t: H, h: RGUI}
     - {t: T, h: RALT}
     - {t: N, h: RCTL}
     - {t: S, h: RSFT}
   - - ;
-    - {t: Q, h: _MUS}
-    - {t: J, h: _GAME}
-    - {t: K, h: _FN}
+    - {t: Q, h: NUM1}
+    - {t: J, h: SYM1}
+    - {t: K, h: SYS}
     - X
     - B
-    - {t: M, h: _FN}
-    - {t: W, h: _GAME}
-    - {t: V, h: _MUS}
+    - {t: M, h: SYS}
+    - {t: W, h: SYM1}
+    - {t: V, h: NUM1}
     - Z
-  - - {t: SPC, h: _SYS}
-    - {t: SPC, h: _SYM1}
-    - {t: E, h: _SYS}
+  - - {t: SPC, h: _NAV}
+    - {t: SPC, h: NUM}
+    - {t: E, h: _NAV}
     - {t: RSFT, h: sticky}
   _APTMAK:
   - [V, W, F, P, B, J, L, U, Y, '''']
@@ -32,27 +32,27 @@ layers:
     - {t: S, h: LCTL}
     - {t: T, h: LALT}
     - {t: H, h: LGUI}
-    - {t: K, h: _NUM1}
+    - {t: K, h: MUS}
     - X
     - {t: N, h: RGUI}
     - {t: A, h: RALT}
     - {t: I, h: RCTL}
     - {t: O, h: RSFT}
   - - ;
-    - {t: C, h: _MUS}
-    - {t: G, h: _GAME}
-    - {t: D, h: _FN}
+    - {t: C, h: NUM1}
+    - {t: G, h: SYM1}
+    - {t: D, h: SYS}
     - DEL
     - BSPC
-    - {t: M, h: _FN}
-    - {t: ',', h: _GAME}
-    - {t: ., h: _MUS}
+    - {t: M, h: SYS}
+    - {t: ',', h: SYM1}
+    - {t: ., h: NUM1}
     - Z
-  - - {t: SPC, h: _SYS}
-    - {t: SPC, h: _SYM1}
-    - {t: E, h: _SYS}
+  - - {t: SPC, h: _NAV}
+    - {t: SPC, h: NUM}
+    - {t: E, h: _NAV}
     - {t: RSFT, h: sticky}
-  _SYS:
+  _NAV:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -87,7 +87,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  _SYM1:
+  NUM:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -122,12 +122,12 @@ layers:
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  _NUM:
+  FN:
   - [S(1), S(2), S(3), S(4), S(5), S(6), S(7), S(8), S(9), S(0)]
   - - C(A)
     - {t: '`', h: LCTL}
     - {t: S(GRV), h: LALT}
-    - {t: C(U), h: _NUM1}
+    - {t: C(U), h: MUS}
     - /
     - \
     - {t: _, h: RGUI}
@@ -139,7 +139,7 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  _NUM1:
+  MUS:
   - ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0']
   - - LSFT
     - LCTL
@@ -155,8 +155,8 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BSPC
-    - _NUM
-  _NAV:
+    - FN
+  GAME:
   - - '1'
     - '2'
     - '3'
@@ -181,8 +181,8 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BSPC
-    - _NUM
-  _FN:
+    - FN
+  SYS:
   - [F1, F2, F3, F4, F5, F6, F7, F8, F9, F10]
   - [TO(0), TO(1), MPRV, F4, F5, DEL, MEDIA PLAY PAUSE, MNXT, F11, F12]
   - - VOLD
@@ -199,7 +199,7 @@ layers:
     - {t: ▽, type: trans}
     - BSPC
     - {t: ▽, type: trans}
-  _GAME:
+  SYM1:
   - - ESC
     - Q
     - W
@@ -234,7 +234,7 @@ layers:
     - SPC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-  _MUS:
+  NUM1:
   - - S(1)
     - S(2)
     - S(3)
@@ -268,4 +268,4 @@ layers:
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BSPC
-    - _NUM
+    - FN

@@ -35,7 +35,6 @@
 #define _SYS 7
 #define _SYM1 8
 #define _NUM1 9
-#define _SNUM1 10
 //#define _PLANCK_NAV 7
 //#define _CTRL 8
 
