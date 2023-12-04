@@ -321,12 +321,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	____SYM1_L2_____, ____SYM1_R2_____,
 	____SYM1_L3_____, ____SYM1_R3_____,
 	KC_ESC, _______, _______, _______),
-
-    [_SNUM1] = LAYOUT_bmax_wrapper(
-	____EMPTY______, ____EMPTY______,
-	___SNUM1_L2_____, ___SNUM1_R2_____,
-	___SNUM1_L3_____, ___SNUM1_R3_____,
-	KC_ESC, _______, _______, _______),
     [_NUM] = LAYOUT_bmax_wrapper(
           ____NUM_L1____, ____NUM_R1____,
           ____NUM_L2____, ____NUM_R2____,
