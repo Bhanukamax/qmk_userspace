@@ -13,14 +13,14 @@ layers:
     - {t: N, h: RCTL}
     - {t: S, h: RSFT}
   - - ;
-    - {t: Q, h: NUM1}
+    - {t: Q, h: _NAV}
     - {t: J, h: SYM1}
     - {t: K, h: SYS}
     - X
     - B
     - {t: M, h: SYS}
     - {t: W, h: SYM1}
-    - {t: V, h: NUM1}
+    - {t: V, h: _NAV}
     - Z
   - - {t: SPC, h: _NAV}
     - {t: SPC, h: NUM}
@@ -39,14 +39,14 @@ layers:
     - {t: I, h: RCTL}
     - {t: O, h: RSFT}
   - - ;
-    - {t: C, h: NUM1}
+    - {t: C, h: _NAV}
     - {t: G, h: SYM1}
     - {t: D, h: SYS}
     - DEL
     - BSPC
     - {t: M, h: SYS}
     - {t: ',', h: SYM1}
-    - {t: ., h: NUM1}
+    - {t: ., h: _NAV}
     - Z
   - - {t: SPC, h: _NAV}
     - {t: SPC, h: NUM}
@@ -74,7 +74,7 @@ layers:
     - {t: ESC, h: RCTL}
     - {t: TRNS, h: RSFT}
   - - {t: ▽, type: trans}
-    - HOME
+    - {t: HOME, type: held}
     - DEL
     - END
     - {t: ▽, type: trans}
@@ -83,7 +83,7 @@ layers:
     - DOWN
     - RIGHT
     - {t: ▽, type: trans}
-  - - {t: ESC, type: held}
+  - - ESC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -256,7 +256,7 @@ layers:
     - WH D
     - {t: ▽, type: trans}
   - - {t: ▽, type: trans}
-    - {t: ACL2, type: held}
+    - ACL2
     - ACL1
     - ACL0
     - {t: ▽, type: trans}

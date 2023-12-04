@@ -83,8 +83,8 @@
 #define SROW(one, two, three, four, five) S(one), S(two), S(three), S(four), S(five)
 #define GROW(one, two, three, four, five) G(one), G(two), G(three), G(four), G(five)
 
-#define BRLL(one, two, three) LT(_NUM1, one), LT(_SYM1, two), LT(_SYS, three)
-#define BRLR(one, two, three) LT(_SYS, one),  LT(_SYM1, two), LT(_NUM1, three)
+#define BRLL(one, two, three) LT(_NAV, one), LT(_SYM1, two), LT(_SYS, three)
+#define BRLR(one, two, three) LT(_SYS, one),  LT(_SYM1, two), LT(_NAV, three)
 
 // TODO:
 // - Remove LT and GT from other layers only leaving them in sym1
