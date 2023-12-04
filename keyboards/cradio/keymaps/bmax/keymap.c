@@ -133,9 +133,9 @@
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
 #define __DVORAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
 
-#define ____DVORAK_L1_MOD KC_DOT, KC_COMM, KC_L, KC_P, KC_Y
+#define ____DVORAK_L1_MOD KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L3_MOD KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
-#define ____DVORAK_R1_MOD KC_F, KC_G, KC_C, KC_R, KC_QUOT
+#define ____DVORAK_R1_MOD KC_F, KC_G, KC_C, KC_R, KC_L
 #define ____DVORAK_R3_MOD KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
 
 #define ____APTMAK_L1____ KC_V, KC_W, KC_F, KC_P, KC_B
@@ -188,8 +188,8 @@
 #define ____MUS_L3____ XX, KC_ACL2, KC_ACL1, KC_ACL0, XX
 #define __MUS_MOD_L__ XX, XX
 
-#define ____MUS_R1____ XX, XX, XX, XX, KC_BTN2
-#define ____MUS_R2____ S(KC_6), KC_WH_U, KC_MS_U, KC_WH_D, XX
+#define ____MUS_R1____ XX, XX, XX, XX, KC_BTN3
+#define ____MUS_R2____ S(KC_6), KC_WH_U, KC_MS_U, KC_WH_D, KC_BTN2
 #define ____MUS_R3____ C(KC_D), KC_MS_L, KC_MS_D, KC_MS_R, KC_BTN1
 
 #define __MUS_MOD_R__ XX, XX
@@ -233,7 +233,7 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
 	CASE_MOD_TAP(LCTL_T, KC_PLUS);
 	CASE_MOD_TAP(LSFT_T, KC_LT);
 	CASE_MOD_TAP(RSFT_T, KC_GT);
-	CASE_MOD_TAP(LSFT_T, S(KC_GRV));
+	CASE_MOD_TAP(LALT_T, S(KC_GRV));
 
       return false; // Skip all further processing of this key
   }
@@ -262,6 +262,9 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
 bake_three_combo(comb_mwv, LT(_SYS, KC_M),  LT(_SYM1, KC_W), LT(_NUM1, KC_V));
 bake_three_combo(comb_mcommdot_ENT, LT(_SYS, KC_M),  LT(_SYM1, KC_COMM), LT(_NUM1, KC_DOT));
 bake_three_combo(comb_htn_ENT, RGUI_T(KC_H), RALT_T(KC_T), RCTL_T(KC_N));
+bake_three_combo(comb_nai_ENT, RGUI_T(KC_N), RALT_T(KC_A), RCTL_T(KC_I));
+
+bake_duel_combo(comb_uh_CAPSWORD, LGUI_T(KC_U),  RGUI_T(KC_H));
 
 bake_duel_combo(comb_ht_BSPC, RGUI_T(KC_H), RALT_T(KC_T));
 bake_duel_combo(comb_na_BSPC, RGUI_T(KC_N), RALT_T(KC_A));
@@ -270,6 +273,7 @@ bake_duel_combo(comb_gh,    KC_G,                RGUI_T(KC_H));
 bake_duel_combo(comb_nl,    KC_L,                RGUI_T(KC_N));
 bake_duel_combo(comb_quot_a, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
 
+
 bake_duel_combo(comb_RN,    KC_R,                RCTL_T(KC_N));
 bake_duel_combo(comb_CT,    KC_C,                RALT_T(KC_T));
 bake_duel_combo(comb_le,    LALT_T(KC_E),        KC_L);
@@ -277,11 +281,17 @@ bake_duel_combo(comb_ct,    RALT_T(KC_T),        KC_C);
 bake_duel_combo(atp_comb_lu,    KC_L,        KC_U);
 bake_duel_combo(atp_comb_pf,    KC_P,        KC_F);
 
+bake_duel_combo(comb_oe_TAB,    LCTL_T(KC_O), LALT_T(KC_E));
+bake_duel_combo(comb_eu_ESC,    LALT_T(KC_E), LGUI_T(KC_U));
+bake_duel_combo(comb_jk_DEL,    KC_J,         KC_K);
+bake_three_combo(comb_oeu_ENT,  LCTL_T(KC_O), LALT_T(KC_E), LGUI_T(KC_U));
+
 combo_t key_combos[] = {
     COMBO(comb_gh,      KC_ENT),
     COMBO(comb_mwv,     KC_ENT),
     COMBO(comb_mcommdot_ENT,     KC_ENT),
     COMBO(comb_htn_ENT,     KC_ENT),
+    COMBO(comb_nai_ENT,     KC_ENT),
     COMBO(comb_nl,      KC_ENT),
     COMBO(comb_pu,      KC_ESC),
     COMBO(comb_quot_a,   KC_TAB),
@@ -295,6 +305,13 @@ combo_t key_combos[] = {
 
     COMBO(comb_ht_BSPC, KC_BSPC),
     COMBO(comb_na_BSPC, KC_BSPC),
+
+    COMBO(comb_oe_TAB, KC_TAB),
+    COMBO(comb_eu_ESC, KC_ESC),
+    COMBO(comb_jk_DEL, KC_DEL),
+    COMBO(comb_oeu_ENT, KC_ENT),
+
+    COMBO(comb_uh_CAPSWORD, CW_TOGG),
 };
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {

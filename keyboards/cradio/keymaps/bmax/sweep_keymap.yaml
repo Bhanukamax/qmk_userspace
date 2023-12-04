@@ -1,7 +1,7 @@
 layout: {qmk_keyboard: cradio, qmk_layout: LAYOUT_split_3x5_2}
 layers:
   _DVORAK:
-  - [., ',', L, P, Y, F, G, C, R, '''']
+  - [',', ., L, P, Y, F, G, C, R, '''']
   - - {t: A, h: LSFT}
     - {t: O, h: LCTL}
     - {t: E, h: LALT}
@@ -111,19 +111,19 @@ layers:
   - - <
     - '='
     - _
-    - S(SLASH)
+    - '?'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - S(BSLS)
-    - S(LBRC)
-    - S(RBRC)
+    - '|'
+    - '{'
+    - '}'
     - '>'
   - - ESC
     - {type: held}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   FN:
-  - [S(1), S(2), S(3), S(4), S(5), S(6), S(7), S(8), S(9), S(0)]
+  - ['!', '@', '#', $, '%', ^, '&', '*', (, )]
   - - C(A)
     - {t: '`', h: LCTL}
     - {t: S(GRV), h: LALT}
@@ -134,7 +134,7 @@ layers:
     - {t: '=', h: RALT}
     - {t: '[', h: RCTL}
     - {t: ']', h: RSFT}
-  - [C(Z), C(X), C(C), C(V), S(SLASH), S(BSLS), '-', +, S(LBRC), S(RBRC)]
+  - [C(Z), C(X), C(C), C(V), '?', '|', '-', +, '{', '}']
   - - ESC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -151,7 +151,7 @@ layers:
     - UP
     - RGHT
     - BSPC
-  - [+, '=', _, '-', S(SLASH), HOME, PGUP, PGDN, END, BSPC]
+  - [+, '=', _, '-', '?', HOME, PGUP, PGDN, END, BSPC]
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BSPC
@@ -177,7 +177,7 @@ layers:
     - {t: '5', h: RALT}
     - {t: '6', h: RCTL}
     - {t: '0', h: RSFT}
-  - [+, '=', _, '-', S(SLASH), S(GRV), '1', '2', '3', '0']
+  - [+, '=', _, '-', '?', S(GRV), '1', '2', '3', '0']
   - - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - BSPC
@@ -235,11 +235,11 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
   NUM1:
-  - - S(1)
-    - S(2)
-    - S(3)
-    - S(4)
-    - S(5)
+  - - '!'
+    - '@'
+    - '#'
+    - $
+    - '%'
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
@@ -250,7 +250,7 @@ layers:
     - {t: ▽, type: trans}
     - C(U)
     - {t: ▽, type: trans}
-    - S(6)
+    - ^
     - WH U
     - MS U
     - WH D
