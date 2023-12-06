@@ -25,52 +25,14 @@
  * https://precondition.github.io/home-row-mods
  */
 
-#define  _DVORAK 0
-#define  _APTMAK 1
-#define  _NAV 2
-#define _NUM 3
-#define _FN 4
-#define _MUS 5
-#define _SYS 7
-#define _SYM1 8
-#define _NUM1 9
-//#define _PLANCK_NAV 7
-//#define _CTRL 8
-
-#define HM_A LSFT_T(KC_A)
-#define HM_O LCTL_T(KC_O)
-#define HM_E LALT_T(KC_E)
-#define HM_U LGUI_T(KC_U)
-
-#define HM_S RSFT_T(KC_S)
-#define HM_N RCTL_T(KC_N)
-#define HM_T RALT_T(KC_T)
-#define HM_H RGUI_T(KC_H)
-
-
-#define HM_L_P LSFT_T(KC_A)
-#define HM_L_R LCTL_T(KC_R)
-#define HM_L_M LALT_T(KC_S)
-#define HM_L_I LGUI_T(KC_T)
-
-#define HM_R_P LSFT_T(KC_O)
-#define HM_R_R LCTL_T(KC_I)
-#define HM_R_M LALT_T(KC_E)
-#define HM_R_I LGUI_T(KC_N)
-
-
-#define G_LBRC LGUI_T(KC_LBRC)
-#define G_RBRC LGUI_T(KC_RBRC)
-
-#define AL_MINS LALT_T(KC_MINS)
-#define AL_EQL RALT_T(KC_EQL)
-
-#define CTL_DEL LCTL_T(KC_DEL)
-#define NAV MO(_NAV)
-#define NUM_BSPC LT(_NUM, KC_BSPC)
-#define CTL_SPC LCTL_T(KC_SPC)
-#define SHFT_TAB LSFT_T(KC_TAB)
-#define NAV_ESC LT(_NAV, KC_ESC)
+#define _DVORAK 0
+#define _APTMAK 1
+#define _SYS    2
+#define _SYM1   3
+#define _SYM0   4
+#define _NUMBER 5
+#define _FN     6
+#define _MUS    7
 
 #define XX _______
 #define BASE TO(_DVORAK)
@@ -82,8 +44,8 @@
 #define SROW(one, two, three, four, five) S(one), S(two), S(three), S(four), S(five)
 #define GROW(one, two, three, four, five) G(one), G(two), G(three), G(four), G(five)
 
-#define BRLL(one, two, three) LT(_NAV, one), LT(_SYM1, two), LT(_SYS, three)
-#define BRLR(one, two, three) LT(_SYS, one),  LT(_SYM1, two), LT(_NAV, three)
+#define BRLL(one, two, three) LT(_NUMBER, one), LT(_SYM1, two), LT(_SYS, three)
+#define BRLR(one, two, three) LT(_SYS, one),  LT(_SYM1, two), LT(_NUMBER, three)
 
 // TODO:
 // - Remove LT and GT from other layers only leaving them in sym1
@@ -99,24 +61,13 @@
 #define ____SYM1_R2_____ rhmr(XX, KC_BSLS,  KC_LBRC, KC_RBRC,  KC_GT)
 #define ____SYM1_R3_____ XX, S(KC_BSLS),  S(KC_LBRC), S(KC_RBRC), KC_GT
 
-//#define ____NUM1_L2_____ lhmr(S(KC_GRV), KC_1, KC_2, KC_3, XX)
-//#define ____NUM1_L3_____ S(KC_GRV), KC_COMM, KC_4, KC_5, KC_GRV
-#define ____NUM1_L1_____ KC_1, KC_2, KC_3, KC_4,  KC_5
-#define ____NUM1_L2_____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
-#define ____NUM1_L3_____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
+#define ____NOMBER_L1_____ KC_1, KC_2, KC_3, KC_4,  KC_5
+#define ____NOMBER_L2_____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
+#define ____NOMBER_L3_____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
 
-#define ____NUM1_R1_____ rhmr(KC_6, KC_7, KC_8, KC_9, KC_0)
-#define ____NUM1_R2_____ rhmr(KC_DOT, KC_4, KC_5, KC_6, KC_0)
-#define ____NUM1_R3_____ S(KC_GRV), KC_1, KC_2, KC_3, KC_0
-
-
-#define ___SNUM1_L2_____ S(KC_GRV), S(KC_1), S(KC_2), S(KC_3), XX
-#define ___SNUM1_L3_____ S(KC_GRV), S(KC_SCLN), S(KC_4), S(KC_5), KC_GRV
-#define ___SNUM1_R2_____ XX, S(KC_6), S(KC_7), S(KC_8), KC_Z
-#define ___SNUM1_R3_____ S(KC_GRV), S(KC_9), S(KC_0), KC_SCLN, KC_Z
-
-#define ____PLANCK_GROW_L___ GROW(KC_1, KC_2,KC_3,KC_4, KC_5)
-#define ____PLANCK_GROW_R___ GROW(KC_6, KC_7,KC_8,KC_9, KC_0)
+#define ____NOMBER_R1_____ rhmr(KC_6, KC_7, KC_8, KC_9, KC_0)
+#define ____NOMBER_R2_____ rhmr(KC_DOT, KC_4, KC_5, KC_6, KC_0)
+#define ____NOMBER_R3_____ S(KC_GRV), KC_1, KC_2, KC_3, KC_0
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_L, KC_P, KC_Y
 #define ____DVORAK_L2____ lhmr(KC_A, KC_O, KC_E, KC_U, LT(_MUS, KC_I))
@@ -124,13 +75,13 @@
 #define ____DVORAK_L3____ KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
 
 // NOTE: KC_SPC  IT'S BAT TO ADD MOD-TAP ETC TO SPACE KEY BECAUSE YOU NEED TO TAP AND HOLD IT IN GRAPHICS PROGRAMS
-// #define __DVORAK_MOD_L__  LT(_NUM, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
-#define __DVORAK_MOD_L__  LT(_NAV, KC_SPC), LT(_NUM, KC_SPC)
+// #define __DVORAK_MOD_L__  LT(_SYM0, KC_ESC), KC_SPC /* <- DO NOT CHANGE KC_SPC */
+#define __DVORAK_MOD_L__  LT(_NUMBER, KC_SPC), LT(_SYM0, KC_SPC)
 
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_DOT
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
-#define __DVORAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
+#define __DVORAK_MOD_R__  LT(_NUMBER, KC_E), OSM(MOD_RSFT)
 
 #define ____DVORAK_L1_MOD KC_QUOT, KC_COMM, KC_DOT, KC_P, KC_Y
 #define ____DVORAK_L3_MOD KC_SCLN, BRLL(KC_Q, KC_J, KC_K), KC_X
@@ -145,19 +96,19 @@
 #define ____APTMAK_R2____ rhmr(KC_X, KC_N, KC_A, KC_I, KC_O)
 #define ____APTMAK_R3____ KC_BSPC, BRLR(KC_M, KC_COMM, KC_DOT), KC_Z
 
-#define __APTMAK_MOD_L__  LT(_NAV, KC_SPC), LT(_NUM, KC_SPC)
-#define __APTMAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
+#define __APTMAK_MOD_L__  LT(_NUMBER, KC_SPC), LT(_SYM0, KC_SPC)
+#define __APTMAK_MOD_R__  LT(_NUMBER, KC_E), OSM(MOD_RSFT)
 
-#define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
-#define ____NUM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), LT(_MUS, C(KC_U)), KC_SLASH
-#define ____NUM_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(KC_SLASH)
-#define __NUM_MOD_L__  XX,  XX
+#define ____SYM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
+#define ____SYM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), LT(_MUS, C(KC_U)), KC_SLASH
+#define ____SYM_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(KC_SLASH)
+#define __SYM_MOD_L__  XX,  XX
 
-#define ____NUM_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
-#define ____NUM_R2____ rhmr(KC_BSLS, KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC)
-#define ____NUM_R3____ S(KC_BSLS), KC_MINUS, KC_PLUS, S(KC_LBRC), S(KC_RBRC)
-#define __NUM_MOD_R__  XX,  XX
-#define __NUM_MOD_R__p XX,  XX,  XX
+#define ____SYM_R1____ SROW(KC_6, KC_7, KC_8, KC_9, KC_0)
+#define ____SYM_R2____ rhmr(KC_BSLS, KC_UNDS, KC_EQL, KC_LBRC, KC_RBRC)
+#define ____SYM_R3____ S(KC_BSLS), KC_MINUS, KC_PLUS, S(KC_LBRC), S(KC_RBRC)
+#define __SYM_MOD_R__  XX,  XX
+#define __SYM_MOD_R__p XX,  XX,  XX
 
 #define ____MUS_L1____ S(KC_1),     S(KC_2),            S(KC_3),            S(KC_4),            S(KC_5)
 #define ____MUS_L2____ XX, XX, XX, C(KC_U), XX
@@ -208,9 +159,8 @@ __attribute__((weak)) bool process_record_user(uint16_t keycode,
 
 uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
-        case LT(_NUM, KC_SPC):
-        case LT(_NAV, KC_BSPC):
-        case LT(_NUM1, KC_BSPC):
+        case LT(_SYM0, KC_SPC):
+        case LT(_NUMBER, KC_BSPC):
         case LCTL_T(KC_O):
             return 0;
         default:
@@ -225,8 +175,8 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     const uint16_t PROGMEM cname[] = {key1, key2, key3, COMBO_END}
 
 
-bake_three_combo(comb_mwv, LT(_SYS, KC_M),  LT(_SYM1, KC_W), LT(_NUM1, KC_V));
-bake_three_combo(comb_mcommdot_ENT, LT(_SYS, KC_M),  LT(_SYM1, KC_COMM), LT(_NUM1, KC_DOT));
+bake_three_combo(comb_mwv, LT(_SYS, KC_M),  LT(_SYM1, KC_W), LT(_NUMBER, KC_V));
+bake_three_combo(comb_mcommdot_ENT, LT(_SYS, KC_M),  LT(_SYM1, KC_COMM), LT(_NUMBER, KC_DOT));
 bake_three_combo(comb_htn_ENT, RGUI_T(KC_H), RALT_T(KC_T), RCTL_T(KC_N));
 bake_three_combo(comb_nai_ENT, RGUI_T(KC_N), RALT_T(KC_A), RCTL_T(KC_I));
 
@@ -234,16 +184,11 @@ bake_duel_combo(comb_uh_CAPSWORD, LGUI_T(KC_U),  RGUI_T(KC_H));
 
 bake_duel_combo(comb_ht_BSPC, RGUI_T(KC_H), RALT_T(KC_T));
 bake_duel_combo(comb_na_BSPC, RGUI_T(KC_N), RALT_T(KC_A));
-bake_duel_combo(comb_pu,    KC_P,               LGUI_T(KC_U));
-bake_duel_combo(comb_gh,    KC_G,                RGUI_T(KC_H));
 bake_duel_combo(comb_nl,    KC_L,                RGUI_T(KC_N));
-bake_duel_combo(comb_quot_a, LT(_NAV, KC_QUOT),  LSFT_T(KC_A));
-
+bake_duel_combo(comb_quot_a, LT(_NUMBER, KC_QUOT),  LSFT_T(KC_A));
 
 bake_duel_combo(comb_RN,    KC_R,                RCTL_T(KC_N));
-bake_duel_combo(comb_CT,    KC_C,                RALT_T(KC_T));
 bake_duel_combo(comb_le,    LALT_T(KC_E),        KC_L);
-bake_duel_combo(comb_ct,    RALT_T(KC_T),        KC_C);
 bake_duel_combo(atp_comb_lu,    KC_L,        KC_U);
 bake_duel_combo(atp_comb_pf,    KC_P,        KC_F);
 
@@ -252,19 +197,30 @@ bake_duel_combo(comb_eu_ESC,    LALT_T(KC_E), LGUI_T(KC_U));
 bake_duel_combo(comb_jk_DEL,    KC_J,         KC_K);
 bake_three_combo(comb_oeu_ENT,  LCTL_T(KC_O), LALT_T(KC_E), LGUI_T(KC_U));
 
+
+bake_duel_combo(comb_gh_s0,       KC_G,                RGUI_T(KC_H));
+bake_duel_combo(comb_pu_s9,       KC_P,                LGUI_T(KC_U));
+bake_duel_combo(comb_dote_slbrc,  KC_DOT,              LALT_T(KC_E));
+bake_duel_combo(comb_ct_srbrc,    KC_C,                RALT_T(KC_T));
+bake_duel_combo(comb_commo_lbrc,  KC_COMM,             LCTL_T(KC_O));
+bake_duel_combo(comb_rn_rbrc,     KC_R,                RCTL_T(KC_N));
+
 combo_t key_combos[] = {
-    COMBO(comb_gh,      KC_ENT),
+    COMBO(comb_gh_s0,      S(KC_0)),
+    COMBO(comb_pu_s9,      S(KC_9)),
+    COMBO(comb_dote_slbrc,    S(KC_LBRC)),
+    COMBO(comb_ct_srbrc,    S(KC_RBRC)),
+    COMBO(comb_commo_lbrc,  KC_LBRC),
+    COMBO(comb_rn_rbrc,     KC_RBRC),
+
     COMBO(comb_mwv,     KC_ENT),
     COMBO(comb_mcommdot_ENT,     KC_ENT),
     COMBO(comb_htn_ENT,     KC_ENT),
     COMBO(comb_nai_ENT,     KC_ENT),
     COMBO(comb_nl,      KC_ENT),
-    COMBO(comb_pu,      KC_ESC),
     COMBO(comb_quot_a,   KC_TAB),
-    COMBO(comb_RN,   KC_L),
-    COMBO(comb_CT,   KC_S),
+
     COMBO(comb_le,   KC_SCLN),
-    COMBO(comb_ct,   KC_Z),
 
     COMBO(atp_comb_lu,   KC_Z),
     COMBO(atp_comb_pf,   KC_Q),
@@ -303,16 +259,16 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
 	____SYM1_L2_____, ____SYM1_R2_____,
 	____SYM1_L3_____, ____SYM1_R3_____,
 	KC_ESC, _______, _______, _______),
-    [_NUM] = LAYOUT_bmax_wrapper(
-          ____NUM_L1____, ____NUM_R1____,
-          ____NUM_L2____, ____NUM_R2____,
-          ____NUM_L3____, ____NUM_R3____,
+    [_SYM0] = LAYOUT_bmax_wrapper(
+          ____SYM_L1____, ____SYM_R1____,
+          ____SYM_L2____, ____SYM_R2____,
+          ____SYM_L3____, ____SYM_R3____,
           KC_ESC, _______, _______, _______
           ),
-    [_NAV] = LAYOUT_bmax_wrapper(
-	____NUM1_L1_____, ____NUM1_R1_____,
-	____NUM1_L2_____, ____NUM1_R2_____,
-	____NUM1_L3_____, ____NUM1_R3_____,
+    [_NUMBER] = LAYOUT_bmax_wrapper(
+	____NOMBER_L1_____, ____NOMBER_R1_____,
+	____NOMBER_L2_____, ____NOMBER_R2_____,
+	____NOMBER_L3_____, ____NOMBER_R3_____,
         KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
     [_FN] = LAYOUT_bmax_wrapper( // Nav layer
         ____FN_L1____, ____FN_R1____,
