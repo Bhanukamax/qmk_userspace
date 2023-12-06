@@ -146,19 +146,8 @@
 #define ____APTMAK_R2____ rhmr(KC_X, KC_N, KC_A, KC_I, KC_O)
 #define ____APTMAK_R3____ KC_BSPC, BRLR(KC_M, KC_COMM, KC_DOT), KC_Z
 
-#define __M_APTMAK_R1____ KC_B, KC_P, KC_F, KC_W, KC_V
-#define __M_APTMAK_R2____ rhmr(KC_B, KC_H, KC_T, KC_S, KC_R)
-#define __M_APTMAK_R3____ KC_K, BRLL(KC_D, KC_G, KC_C), KC_SCLN
-#define __M_APTMAK_L1____ KC_QUOT, KC_Y, KC_U, KC_L, KC_J
-#define __M_APTMAK_L2____ lhmr(KC_O, KC_I, KC_A, KC_N, KC_J)
-#define __M_APTMAK_L3____ KC_Z, BRLR(KC_COMM, KC_DOT, KC_M), KC_X
-
 #define __APTMAK_MOD_L__  LT(_NAV, KC_SPC), LT(_NUM, KC_SPC)
 #define __APTMAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
-
-
-#define NUM_ROW_L KC_1, KC_2, KC_3, KC_4, KC_5
-#define NUM_ROW_R KC_6, KC_7, KC_8, KC_9, KC_0
 
 #define ____NAV_L1____ KC_1, KC_2,  KC_3, KC_4, KC_5
 #define ____NAV_L2____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
