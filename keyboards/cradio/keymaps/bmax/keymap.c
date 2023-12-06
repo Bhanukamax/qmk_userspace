@@ -31,7 +31,6 @@
 #define _NUM 3
 #define _FN 4
 #define _MUS 5
-#define _GAME 6
 #define _SYS 7
 #define _SYM1 8
 #define _NUM1 9
@@ -184,23 +183,13 @@
 #define __MUS_MOD_R__ XX, XX
 #define __MUS_MOD_R__p XX, XX, XX
 
-#define ____GAME_L1____ KC_ESC,  KC_Q,    KC_W,    KC_E,    KC_R
-#define ____GAME_L2____ KC_TAB,  KC_A,    KC_S,    KC_D,    KC_F
-#define ____GAME_L3____ KC_LCTL, KC_Z,    KC_X,    KC_C,    KC_V
-#define __GAME_MOD_L__ XX, KC_SPC
-
-#define ____GAME_R1____ XX, XX, XX, XX, BASE
-#define ____GAME_R2____ XX, XX, XX, XX, XX
-#define ____GAME_R3____ XX, XX, XX, XX, XX
-#define __GAME_MOD_R__ XX, XX
-
 #define ____FN_L1____ KC_F1,  KC_F2, KC_F3, KC_F4,  KC_F5
 #define ____FN_L2____ TO(_DVORAK), TO(_APTMAK), KC_MPRV, KC_F4, KC_F5
 #define ____FN_L3____ KC_VOLD,  KC_VOLU, KC_F3, KC_BRID, KC_BRIU
 
 #define ____FN_R1____ KC_F6, KC_F7, KC_F8, KC_F9, KC_F10
 #define ____FN_R2____ KC_DEL, KC_MEDIA_PLAY_PAUSE, KC_MNXT, KC_F11, KC_F12
-#define ____FN_R3____ KC_F6,  TO(_GAME), RGB_TOG, KC_BRID, KC_BRIU
+#define ____FN_R3____ KC_F6,  XX, RGB_TOG, KC_BRID, KC_BRIU
 
 
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
@@ -332,11 +321,6 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
           ____NUM_L3____, ____NUM_R3____,
           KC_ESC, _______, _______, _______
           ),
-    [_NUM1] = LAYOUT_bmax_wrapper( // Nav layer
-        ____NAV_L1____, ____NAV_R1____,
-        ____NAV_L2____, ____NAV_R2____,
-        ____NAV_L3____, ____NAV_R3____,
-        KC_TRNS, KC_TRNS, KC_BSPC, MO(_FN)),
     [_NAV] = LAYOUT_bmax_wrapper(
 	____NUM1_L1_____, ____NUM1_R1_____,
 	____NUM1_L2_____, ____NUM1_R2_____,
@@ -347,13 +331,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         ____FN_L2____, ____FN_R2____,
         ____FN_L3____, ____FN_R3____,
         KC_TRNS, KC_TRNS, KC_BSPC, KC_TRNS),
-    [_GAME] = LAYOUT_bmax_wrapper( // Nav layer
-        ____GAME_L1____, ____GAME_R1____,
-        ____GAME_L2____, ____GAME_R2____,
-        ____GAME_L3____, ____GAME_R3____,
-        __GAME_MOD_L__, __GAME_MOD_R__
-                                   ),
-   [_MUS] = LAYOUT_bmax_wrapper( // Nav layer
+    [_MUS] = LAYOUT_bmax_wrapper( // Nav layer
         ____MUS_L1____, ____MUS_R1____,
         ____MUS_L2____, ____MUS_R2____,
         ____MUS_L3____, ____MUS_R3____,
