@@ -148,18 +148,6 @@
 #define __APTMAK_MOD_L__  LT(_NAV, KC_SPC), LT(_NUM, KC_SPC)
 #define __APTMAK_MOD_R__  LT(_NAV, KC_E), OSM(MOD_RSFT)
 
-#define ____NAV_L1____ KC_1, KC_2,  KC_3, KC_4, KC_5
-#define ____NAV_L2____ KC_LSFT, KC_LCTL, KC_LALT, KC_LGUI,  KC_SLASH
-#define ____NAV_L3____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
-// #define ____NAV_L3____ C(KC_Z), C(KC_X),         C(KC_C),         C(KC_V),         XX
-#define __NAV_MOD_L__  LT(_FN, KC_SPC), LT(_FN, KC_SPC)
-
-#define ____NAV_R1____ KC_6, KC_7, KC_8, KC_9, KC_0
-#define ____NAV_R2____ KC_LEFT, KC_DOWN, KC_UP,   KC_RGHT, KC_BSPC
-#define ____NAV_R3____ KC_HOME, KC_PGUP, KC_PGDN, KC_END,  KC_BSPC
-#define __NAV_MOD_R__  KC_BSPC, MO(_FN)
-#define __NAV_MOD_R__p KC_BSPC, KC_BSPC, MO(_FN)
-
 #define ____NUM_L1____ SROW(KC_1, KC_2,  KC_3, KC_4, KC_5)
 #define ____NUM_L2____ C(KC_A), LCTL_T(KC_GRV), LALT_T(S(KC_GRV)), LT(_MUS, C(KC_U)), KC_SLASH
 #define ____NUM_L3____ C(KC_Z), C(KC_X), C(KC_C), C(KC_V), S(KC_SLASH)
