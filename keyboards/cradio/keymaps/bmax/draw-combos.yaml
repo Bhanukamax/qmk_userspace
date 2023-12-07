@@ -1,8 +1,10 @@
 combos:
-  - {p: [16, 17], k: "BSPC", l: ["_DVORAK"]}
-  - {p: [16, 17, 18], k: "ENT", l: ["_DVORAK"]}
-  - {p: [11, 12], k: "Tab", l: ["_DVORAK"]}
-  - {p: [12, 13], k: "Esc", l: ["_DVORAK"]}
-  - {p: [22, 23], k: "Del", l: ["_DVORAK"]}  
+  - {p: [16, 17], k: "BSPC", l: ["_DVORAK", "_APTMAK"]}
+  - {p: [16, 17, 18], k: "ENT", l: ["_DVORAK", "_APTMAK"]}
+  - {p: [11, 12], k: "Tab", l: ["_DVORAK", "_APTMAK"]}
+  - {p: [12, 13], k: "Esc", l: ["_DVORAK", "_APTMAK"]}
+  - {p: [22, 23], k: "Del", l: ["_DVORAK", "_APTMAK"]}
+  - {p: [2, 3], k: "Q", l: ["_APTMAK"]}
+  - {p: [6, 7], k: "Z", l: ["_APTMAK"]}  
 
 

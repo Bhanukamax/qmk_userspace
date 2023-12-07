@@ -440,6 +440,36 @@ path.combo {
 <text x="0" y="0" class="key tap">RSFT</text>
 <text x="0" y="24" class="key hold">sticky</text>
 </g>
+<g class="combo combopos-0">
+<rect rx="6" ry="6" x="546" y="79" width="28" height="26" class="combo"/>
+<text x="560" y="92" class="combo tap">BSPC</text>
+</g>
+<g class="combo combopos-1">
+<path d="M588,95 l-37,3" class="combo"/>
+<path d="M588,95 l37,4" class="combo"/>
+<rect rx="6" ry="6" x="574" y="82" width="28" height="26" class="combo"/>
+<text x="588" y="95" class="combo tap">ENT</text>
+</g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="98" y="80" width="28" height="26" class="combo"/>
+<text x="112" y="93" class="combo tap">Tab</text>
+</g>
+<g class="combo combopos-3">
+<rect rx="6" ry="6" x="154" y="79" width="28" height="26" class="combo"/>
+<text x="168" y="92" class="combo tap">Esc</text>
+</g>
+<g class="combo combopos-4">
+<rect rx="6" ry="6" x="154" y="135" width="28" height="26" class="combo"/>
+<text x="168" y="148" class="combo tap">Del</text>
+</g>
+<g class="combo combopos-5">
+<rect rx="6" ry="6" x="154" y="23" width="28" height="26" class="combo"/>
+<text x="168" y="36" class="combo tap">Q</text>
+</g>
+<g class="combo combopos-6">
+<rect rx="6" ry="6" x="546" y="23" width="28" height="26" class="combo"/>
+<text x="560" y="36" class="combo tap">Z</text>
+</g>
 </g>
 </g>
 <g transform="translate(30, 661)" class="layer-_SYS">
