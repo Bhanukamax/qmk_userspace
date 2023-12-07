@@ -13,4 +13,4 @@ qmk flash -kb cradio -km bmax
 
 ## Keymap
 image generated using the awesome [keymap-drawer](https://github.com/caksoylar/keymap-drawer) tool
-![keymap image](sweep.svg)
+![keymap image](sweep.png)
