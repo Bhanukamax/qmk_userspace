@@ -5,3 +5,6 @@
 ```
 qmk flash -kb cradio -km bmax
 ```
+
+## Keymap
+![keymap image](sweep.svg)
