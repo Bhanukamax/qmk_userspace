@@ -27,8 +27,14 @@ bake_duel_combo(atp_comb_lu,    KC_L,        KC_U);
 bake_duel_combo(atp_comb_pf,    KC_P,        KC_F);
 
 bake_duel_combo(comb_oe_TAB,    LCTL_T(KC_O), LALT_T(KC_E));
+bake_duel_combo(comb_st_TAB,    LCTL_T(KC_S), LALT_T(KC_T));
+
 bake_duel_combo(comb_eu_ESC,    LALT_T(KC_E), LGUI_T(KC_U));
+bake_duel_combo(comb_th_ESC,    LALT_T(KC_T), LGUI_T(KC_H));
+
 bake_duel_combo(comb_jk_DEL,    KC_J,         KC_K);
+bake_duel_combo(comb_gd_DEL,    KC_G,         KC_D);
+
 bake_three_combo(comb_oeu_ENT,  LCTL_T(KC_O), LALT_T(KC_E), LGUI_T(KC_U));
 
 
@@ -64,7 +70,12 @@ combo_t key_combos[] = {
 
     COMBO(comb_oe_TAB, KC_TAB),
     COMBO(comb_eu_ESC, KC_ESC),
+    COMBO(comb_st_TAB, KC_TAB),
+    COMBO(comb_th_ESC, KC_ESC),
+
     COMBO(comb_jk_DEL, KC_DEL),
+    COMBO(comb_gd_DEL, KC_DEL),
+
     COMBO(comb_oeu_ENT, KC_ENT),
 
     COMBO(comb_uh_CAPSWORD, CW_TOGG),
