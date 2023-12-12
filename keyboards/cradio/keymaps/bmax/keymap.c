@@ -51,8 +51,9 @@
 // - Remove LT and GT from other layers only leaving them in sym1
 // - Add SCLN (semi colon) and colon to some place
 #define ____EMPTY______ XX, XX, XX, XX, XX
-#define ____SYS_R2_____ rhmr(KC_LT, KC_BSPC, KC_UP, KC_ESC, XX)
-#define ____SYS_R3_____ XX, KC_LEFT, KC_DOWN, KC_RIGHT, XX
+#define ____SYS_R1_____ rhmr(KC_LT, KC_PGUP, KC_UP, KC_PGDN, XX)
+#define ____SYS_R2_____ rhmr(KC_LT, KC_HOME, KC_UP, KC_END, XX)
+#define ____SYS_R3_____ KC_HOME, KC_LEFT, KC_DOWN, KC_RIGHT, KC_END
 #define ____SYS_L2_____ lhmr(XX, KC_ESC, XX, KC_TAB, XX)
 #define ____SYS_L3_____ XX, KC_HOME, KC_DEL, KC_END, XX
 
@@ -130,6 +131,7 @@
 #define ____FN_R2____ KC_DEL, KC_MEDIA_PLAY_PAUSE, KC_MNXT, KC_F11, KC_F12
 #define ____FN_R3____ KC_F6,  XX, RGB_TOG, KC_BRID, KC_BRIU
 
+#include "combos.h"
 
 #define LAYOUT_bmax_wrapper(...) LAYOUT_split_3x5_2(__VA_ARGS__)
 #define LAYOUT_wrapper(...) LAYOUT_5x6(__VA_ARGS__)
@@ -168,7 +170,9 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-#include "combos.h"
+
+
+
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_bmax_wrapper( // Dvorak
@@ -184,7 +188,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
      __APTMAK_MOD_L__, __APTMAK_MOD_R__
     ),
     [_SYS] = LAYOUT_bmax_wrapper(
-	____EMPTY______, ____EMPTY______,
+	____EMPTY______, ____SYS_R1_____,
 	____SYS_L2_____, ____SYS_R2_____,
 	____SYS_L3_____, ____SYS_R3_____,
 	KC_ESC, _______, _______, _______),

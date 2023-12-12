@@ -1,4 +1,5 @@
-#define bake_duel_combo(cname, key1, key2) \
+
+#define bake_duel_combo(cname, key1, key2)			\
   const uint16_t PROGMEM cname[] = {key1, key2, COMBO_END}
 
 #define bake_three_combo(cname, key1, key2, key3) \
@@ -16,7 +17,8 @@ bake_three_combo(comb_nai_ENT, RGUI_T(KC_N), RALT_T(KC_A), RCTL_T(KC_I));
 
 bake_duel_combo(comb_uh_CAPSWORD, LGUI_T(KC_U),  RGUI_T(KC_H));
 
-bake_duel_combo(comb_ht_BSPC, RGUI_T(KC_H), RALT_T(KC_T));
+bake_duel_combo(comb_mw_BSPC, LT(_SYS, KC_M),  LT(_SYM1, KC_W));
+bake_duel_combo(comb_ht_BSPC , RALT_T(KC_T), RGUI_T(KC_H));
 bake_duel_combo(comb_na_BSPC, RGUI_T(KC_N), RALT_T(KC_A));
 bake_duel_combo(comb_nl,    KC_L,                RGUI_T(KC_N));
 bake_duel_combo(comb_quot_a, LT(_NUMBER, KC_QUOT),  LSFT_T(KC_A));
@@ -46,7 +48,7 @@ bake_duel_combo(comb_commo_lbrc,  KC_COMM,             LCTL_T(KC_O));
 bake_duel_combo(comb_rn_rbrc,     KC_R,                RCTL_T(KC_N));
 
 combo_t key_combos[] = {
-    COMBO(comb_gh_s0,      S(KC_0)),
+    COMBO(comb_gh_s0,      KC_BSPC),
     COMBO(comb_pu_s9,      S(KC_9)),
     COMBO(comb_dote_slbrc,    S(KC_LBRC)),
     COMBO(comb_ct_srbrc,    S(KC_RBRC)),
@@ -65,6 +67,7 @@ combo_t key_combos[] = {
     COMBO(atp_comb_lu,   KC_Z),
     COMBO(atp_comb_pf,   KC_Q),
 
+    COMBO(comb_mw_BSPC, KC_BSPC),
     COMBO(comb_ht_BSPC, KC_BSPC),
     COMBO(comb_na_BSPC, KC_BSPC),
 

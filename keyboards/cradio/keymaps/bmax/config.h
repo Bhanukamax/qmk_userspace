@@ -45,3 +45,4 @@
 #define QUICK_TAP_TERM 200
 #define QUICK_TAP_TERM_PER_KEY
 //#define COMBO_TERM 10
+#define MK_COMBINED
