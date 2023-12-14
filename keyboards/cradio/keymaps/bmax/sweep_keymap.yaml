@@ -58,31 +58,31 @@ layers:
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - <
+    - {t: PGUP, h: RGUI}
+    - {t: UP, h: RALT}
+    - {t: PGDN, h: RCTL}
+    - {t: TRNS, h: RSFT}
   - - {t: TRNS, h: LSFT}
     - {t: ESC, h: LCTL}
     - {t: TRNS, h: LALT}
     - {t: TAB, h: LGUI}
     - {t: ▽, type: trans}
     - <
-    - {t: BSPC, h: RGUI}
+    - {t: HOME, h: RGUI}
     - {t: UP, h: RALT}
-    - {t: ESC, h: RCTL}
+    - {t: END, h: RCTL}
     - {t: TRNS, h: RSFT}
   - - {t: ▽, type: trans}
     - HOME
     - DEL
     - {t: END, type: held}
     - {t: ▽, type: trans}
-    - {t: ▽, type: trans}
+    - HOME
     - LEFT
     - DOWN
     - RIGHT
-    - {t: ▽, type: trans}
+    - END
   - - ESC
     - {t: ▽, type: trans}
     - {t: ▽, type: trans}
