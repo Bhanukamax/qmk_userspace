@@ -208,7 +208,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FN] = LAYOUT_planck_grid_wrapper( // Nav layer
         ____FN_L1____,    XXXXXXX, XXXXXXX , ____FN_R1____,
         ____FN_L2____,    XXXXXXX, XXXXXXX , ____FN_R2____,
-        ____FN_L3____,    RESET, XXXXXXX , ____FN_R3____,
+        ____FN_L3____,    QK_BOOT, QK_RBT , ____FN_R3____,
 		XXXXXXX, XXXXXXX, XXXXXXX,        KC_TRNS, KC_TRNS, XXXXXXX, XXXXXXX , KC_BSPC, KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX),
     [_MUS] = LAYOUT_planck_grid_wrapper( // Nav layer
         ____MUS_L1____,   XXXXXXX, XXXXXXX, ____MUS_R1____,
