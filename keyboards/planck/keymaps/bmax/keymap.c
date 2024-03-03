@@ -173,7 +173,7 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
 
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_planck_grid_wrapper( // Dvorak
-        ____DVORAK_L1_MOD,XXXXXXX, XXXXXXX, ____DVORAK_R1_MOD,
+        ____DVORAK_L1_MOD,RGB_TOG, XXXXXXX, ____DVORAK_R1_MOD,
         __DVORAK_L2_SWEEP,XXXXXXX, XXXXXXX, ____DVORAK_R2____,
         ____DVORAK_L3_MOD,XXXXXXX, XXXXXXX, ____DVORAK_R3_MOD,
 		XXXXXXX, XXXXXXX, XXXXXXX,        __DVORAK_MOD_L__, XXXXXXX, XXXXXXX, __DVORAK_MOD_R__, XXXXXXX, XXXXXXX, XXXXXXX
@@ -208,7 +208,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_FN] = LAYOUT_planck_grid_wrapper( // Nav layer
         ____FN_L1____,    XXXXXXX, XXXXXXX , ____FN_R1____,
         ____FN_L2____,    XXXXXXX, XXXXXXX , ____FN_R2____,
-        ____FN_L3____,    XXXXXXX, XXXXXXX , ____FN_R3____,
+        ____FN_L3____,    RESET, XXXXXXX , ____FN_R3____,
 		XXXXXXX, XXXXXXX, XXXXXXX,        KC_TRNS, KC_TRNS, XXXXXXX, XXXXXXX , KC_BSPC, KC_TRNS, XXXXXXX, XXXXXXX, XXXXXXX),
     [_MUS] = LAYOUT_planck_grid_wrapper( // Nav layer
         ____MUS_L1____,   XXXXXXX, XXXXXXX, ____MUS_R1____,
