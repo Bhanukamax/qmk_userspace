@@ -10,8 +10,8 @@
 /* 20 21 22 23 24    25 26 27 28 29 */
 /*          30 31    32 33 */
 
-bake_three_combo(comb_jkl_ENT, KC_J, KC_K, KC_L);
-bake_three_combo(comb_sdf_ENT, KC_S, KC_D, KC_F);
+bake_three_combo(comb_jkl_ENT, KC_J, KC_K, RCTL_T(KC_L));
+bake_three_combo(comb_sdf_ENT, LCTL_T(KC_S), KC_D, KC_F);
 bake_duel_combo(comb_jk_BSPC , KC_J, KC_K);
 bake_duel_combo(comb_cv_BSPC , KC_C, KC_V);
 bake_duel_combo(comb_df_ESC , KC_D, KC_F);

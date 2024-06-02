@@ -67,7 +67,7 @@
 #define ____NOMBER_L3_____ KC_PLUS,  KC_EQL, KC_UNDS, KC_MINUS, S(KC_SLASH)
 
 #define ____NOMBER_R1_____ rhmr(KC_6, KC_7, KC_8, KC_9, KC_0)
-#define ____NOMBER_R2_____ rhmr(KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_0)
+#define ____NOMBER_R2_____ rhmr(KC_LEFT, KC_DOWN, KC_UP, KC_RIGHT, KC_QUOT)
 #define ____NOMBER_R3_____ S(KC_GRV), KC_1, KC_2, KC_3, KC_0
 
 #define ____DVORAK_L1____ KC_QUOT, KC_COMM, KC_L, KC_P, KC_Y
@@ -82,7 +82,7 @@
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_DOT
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
-#define __DVORAK_MOD_R__  LT(_NUMBER, KC_E), KC_LGUI
+#define __DVORAK_MOD_R__  LT(_NUMBER, KC_SPC), KC_LGUI
 
 #define ____DVORAK_L1_MOD KC_Q, KC_W, KC_E  , KC_R, KC_T
 #define ____DVORAK_L3_MOD KC_Z, BRLL(KC_X, KC_C, KC_V), KC_V
@@ -170,10 +170,6 @@ uint16_t get_quick_tap_term(uint16_t keycode, keyrecord_t *record) {
     }
 }
 
-
-
-
-
 const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_DVORAK] = LAYOUT_bmax_wrapper( // Dvorak
      KC_Q, KC_W, KC_E, KC_R, KC_T,
@@ -181,7 +177,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   LSFT_T(KC_A),  LCTL_T(KC_S), KC_D, KC_F, KC_G,
      KC_H, KC_J, KC_K, RCTL_T(KC_L), RSFT_T(KC_SCLN),
      KC_Z, KC_X, KC_C, KC_V, KC_B,
-     KC_N, KC_M, KC_L, KC_COMM, KC_DOT,
+     KC_N, KC_M, KC_COMM, KC_DOT, KC_SLASH,
         __DVORAK_MOD_L__, __DVORAK_MOD_R__
         ),
      [_APTMAK] = LAYOUT_bmax_wrapper( // Dvorak
