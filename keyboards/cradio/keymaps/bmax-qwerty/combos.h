@@ -15,6 +15,7 @@ bake_three_combo(comb_sdf_ENT, KC_S, KC_D, KC_F);
 bake_duel_combo(comb_jk_BSPC , KC_J, KC_K);
 bake_duel_combo(comb_cv_BSPC , KC_C, KC_V);
 bake_duel_combo(comb_df_ESC , KC_D, KC_F);
+bake_duel_combo(comb_UI_CAPSWORD , KC_U, KC_I);
 
 combo_t key_combos[] = {
     COMBO(comb_jkl_ENT,     KC_ENT),
@@ -22,4 +23,5 @@ combo_t key_combos[] = {
     COMBO(comb_jk_BSPC, KC_BSPC),
     COMBO(comb_cv_BSPC, KC_DEL),
     COMBO(comb_df_ESC, KC_ESC),
+    COMBO(comb_UI_CAPSWORD,  CW_TOGG),
 };

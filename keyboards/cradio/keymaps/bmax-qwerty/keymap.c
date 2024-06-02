@@ -82,7 +82,7 @@
 #define ____DVORAK_R1____ KC_F, KC_G, KC_C, KC_R, KC_DOT
 #define ____DVORAK_R2____ rhmr(KC_D, KC_H, KC_T, KC_N, KC_S)
 #define ____DVORAK_R3____ KC_B, BRLR(KC_M, KC_W, KC_V), KC_Z
-#define __DVORAK_MOD_R__  LT(_NUMBER, KC_E), OSM(MOD_RSFT)
+#define __DVORAK_MOD_R__  LT(_NUMBER, KC_E), KC_LGUI
 
 #define ____DVORAK_L1_MOD KC_Q, KC_W, KC_E  , KC_R, KC_T
 #define ____DVORAK_L3_MOD KC_Z, BRLL(KC_X, KC_C, KC_V), KC_V
@@ -181,7 +181,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   LSFT_T(KC_A),  LCTL_T(KC_S), KC_D, KC_F, KC_G,
      KC_H, KC_J, KC_K, RCTL_T(KC_L), RSFT_T(KC_SCLN),
      KC_Z, KC_X, KC_C, KC_V, KC_B,
-     KC_N, KC_M, KC_L, KC_COMM, RSFT_T(KC_DOT),
+     KC_N, KC_M, KC_L, KC_COMM, KC_DOT,
         __DVORAK_MOD_L__, __DVORAK_MOD_R__
         ),
      [_APTMAK] = LAYOUT_bmax_wrapper( // Dvorak
